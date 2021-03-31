@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<div style="color: blue;"><center><h1>Point<lebel style="color: green;"> Green Molucas</lebel></h1></center></div>
+  <div>
+
+<script>
+ 
+window.onload = function () {
+
+
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  theme: "dark2", // "light1", "light2", "dark1"
+  animationEnabled: true,
+  exportEnabled: true,
+  title: {
+    text: "Sistem Poin"
+  },
+  axisX: {
+    margin: 120,
+    labelPlacement: "inside",
+    tickPlacement: "inside"
+  },
+  axisY2: {
+    title: "Views (in billion)",
+    titleFontSize: 14,
+    includeZero: true,
+    suffix: "poin"
+  },
+  data: [{
+    type: "bar",
+    axisYType: "secondary",
+    yValueFormatString: "#,###.##poin",
+    indexLabel: "{y}",
+    dataPoints: [
+      { label: "Hamsya Said", y: 73 },
+      { label: "Ahmad", y: 93},
+      { label: "Ain nurhayati idi", y: 83},
+      { label: "Malthina Paulus", y: 53},
+      { label: "Hellen", y: 93},
+      { label: "Clodio", y: 94},
+      { label: "Wiwin", y: 94},
+      { label: "Bertha Samponu", y: 94},
+      { label: "Mega Rizky Sia", y: 86},
+      { label: "Azmida Kwalomine", y: 96},
+      { label: "Sien", y: 90},
+      { label: "Natasya", y: 73},
+      { label: "Rani Keliangin", y: 93},
+      { label: "Ismetyati", y: 83},
+      { label: "Shofia Latifa", y: 53},
+      { label: "Fanny", y: 93},
+      { label: "Paula", y: 94},
+      { label: "Nixca Mintik", y: 94},
+      { label: "Jonathan Likumahuwa", y: 94},
+      { label: "Linda Nikijuluw", y: 86},
+      { label: "Rifai Patty", y: 96},
+      { label: "Marwia", y: 90},
+      { label: "Marol Adi P Ayal", y: 94},
+      { label: "Stephanie", y: 86}
+    ]
+  }]
+});
+chart.render();
+  
+}
+</script>
+</head>
+<body>
+<center> <div id="chartContainer" style="height: 600px; width: 50%;"></center></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

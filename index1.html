@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coming Soon</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/coming-soon.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+
+<div>
+  <h3 style="font-family: ariel;">Kriteria</h3>
+  <label>
+    <b>1.Jemput Tabungan.</b><br>
+    <b>2.Sortir Tabungan.</b><br>
+    <b>3.Kumpul Tabungan.</b>
+  </label>
+</div>
+  <br>
+</label>
+<table cellspacing='0'>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Jemput</th>
+      <th>Sortir</th>
+      <th>Kumpul</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Caki</td>
+      <td>544,75</td>
+      <td>1,5</td>
+      <td>18</td>
+      <td>564,25</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>218,75</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>218,25</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Adi</td>
+      <td>1,367</td>
+      <td>391,5</td>
+      <td>9</td>
+      <td>1.767,5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Linda</td>
+      <td>1,5</td>
+      <td>26,35</td>
+      <td>8</td>
+      <td>35,85</td>
+    </tr>
+     <tr>
+      <td>5</td>
+      <td>Eci</td>
+      <td></td>
+      <td>26,35</td>
+      <td>79</td>
+      <td>105,35</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Sien</td>
+      <td></td>
+      <td></td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Wiwin</td>
+      <td></td>
+      <td></td>
+      <td>15</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rani</td>
+      <td></td>
+      <td></td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Marwia</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Bertha</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Wiwin</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class="social-icons">
+    <ul class="list-unstyled text-center mb-0">
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+ 
+    window.onload = function () {
+    
+    
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+      theme: "dark2", // "light1", "light2", "dark1"
+      animationEnabled: true,
+      exportEnabled: true,
+      title: {
+        text: "Sistem Poin"
+      },
+      axisX: {
+        margin: 20,
+        labelPlacement: "inside",
+        tickPlacement: "inside"
+      },
+      axisY2: {
+        title: "Views (in billion)",
+        titleFontSize: 14,
+        includeZero: true,
+        suffix: "poin"
+      },
+      data: [{
+        type: "bar",
+        axisYType: "secondary",
+        yValueFormatString: "#,###.##poin",
+        indexLabel: "{y}",
+        title: {
+          text : "sien"
+        },
+        dataPoints: [
+          { label: "Sien", y: 9},
+          { label: "Wiwin", y: 15},
+          { label: "Rani", y: 10},
+          { label: "Bertha", y: 1},
+          { label: "Nixca Mintik", y: 564.25},
+          { label: "Jonathan", y: 218.25},
+          { label: "Linda", y: 35.85},
+          { label: "Eci", y: 105.35},
+          { label: "Marwia", y: 90},
+          { label: "Adi", y: 1767.5},
+          { label: "Hellen", y: 1}
+        ]
+      }]
+    });
+    chart.render();
+      
+    }
+    </script>
+
+
+  <!-- Custom scripts for this template -->
+  <script src="js/coming-soon.min.js"></script>
+
+</body>
+<div id="chartContainer" style="height: 600px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</html>
