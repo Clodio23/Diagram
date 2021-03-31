@@ -21,7 +21,19 @@
   <!-- Custom styles for this template -->
   <link href="css/coming-soon.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <script language="JavaScript">
+    var tanggallengkap = new String();
+    var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+    namahari = namahari.split(" ");
+    var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+    namabulan = namabulan.split(" ");
+    var tgl = new Date();
+    var hari = tgl.getDay();
+    var tanggal = tgl.getDate();
+    var bulan = tgl.getMonth();
+    var tahun = tgl.getFullYear();
+    tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+    </script>
 </head>
 
 <body>
@@ -30,6 +42,7 @@
 
 <div>
   <center><h3 style="font-family: ariel; background-color: tomato;">Pemenuhi Kriteria Point</h3></center>
+  <div style="font-family: ariel;" id='jam' ></div>
   <center><label style="background-color: cadetblue; font-family: sans-serif;">
     <b>1.Jemput Tabungan.</b><br>
     <b>2.Sortir Tabungan.</b><br>
@@ -39,6 +52,7 @@
 </div>
   <br>
 </label>
+<script language='JavaScript'>document.write(tanggallengkap);</script>
 <table cellspacing='0'>
   <thead>
     <tr>
@@ -201,6 +215,15 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/coming-soon.min.js"></script>
+  <script type="text/javascript">
+    // 1 detik = 1000
+    window.setTimeout("waktu()",1000);  
+    function waktu() {   
+    var tanggal = new Date();  
+    setTimeout("waktu()",1000);  
+    document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+    }
+    </script>
 
 </body>
 <div id="chartContainer" style="height: 600px; width: 100%;"></div>
